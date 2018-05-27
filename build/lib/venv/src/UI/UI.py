@@ -6,7 +6,7 @@ allIngredients = []
 recipes = Recipe.Recipes()
 
 
-def clear_screen222222():
+def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 
@@ -53,7 +53,7 @@ def edit_recipe():
         input()
 
 
-def new_recipe2222():
+def new_recipe():
     clear_screen()
     finished = 1
     ingredients = Ingredient.Ingredients()
@@ -102,6 +102,7 @@ def comment_recipe(recipe):
 
 
 def show_recipe():
+	print("THIS FUNCTION IS PROVIDED BY VERSION >= 1.2)
     if len(recipes.recipes) > 0:
         clear_screen()
         print([o.name for o in recipes.recipes])
